@@ -1,0 +1,13 @@
+{
+    "genderMale": "Hombre",
+    "genderFemale": "Mujer",
+    "age": "Edad",
+    "height": "Altura",
+    "weight": "Peso",
+    "obeseWeight": "Obesidad",
+    "overWeight": "Sobrepeso",
+    "normalWeight": "Peso normal",
+    "underWeight": "Bajo de peso",
+    "calculate": "calcular",
+    "back": "Volver"
+}

@@ -1,6 +1,7 @@
 import 'package:bmi_calculator/logic/bmi.dart';
 import 'package:bmi_calculator/utils/app_constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ResultPage extends StatelessWidget {
   const ResultPage({Key? key, required this.bmi}) : super(key: key);
@@ -15,9 +16,9 @@ class ResultPage extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          child: const Text(
-            "BACK",
-            style: TextStyle(
+          child: Text(
+            AppLocalizations.of(context).back.toUpperCase(),
+            style: const TextStyle(
               fontSize: 30,
               color: mainHexColor,
             ),
@@ -27,15 +28,12 @@ class ResultPage extends StatelessWidget {
         ),
       ),
       backgroundColor: mainHexColor,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const Expanded(
-            child: SizedBox(),
-          ),
-          Expanded(
-            child: Text(
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
               bmi.calculateBMI().toStringAsFixed(2),
               style: const TextStyle(
                 fontSize: 90,
@@ -43,21 +41,22 @@ class ResultPage extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          Expanded(
-            child: Text(
-              bmi.getInterpretation(),
+            const Divider(
+              color: accentHexColor,
+              height: 20,
+              indent: 40,
+              endIndent: 40,
+            ),
+            Text(
+              bmi.getInterpretation(context),
               style: const TextStyle(
                 fontSize: 42,
                 color: accentHexColor,
               ),
               textAlign: TextAlign.center,
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

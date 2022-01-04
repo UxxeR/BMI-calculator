@@ -10,8 +10,8 @@
     "underWeight": "Underweight",
     "calculate": "calculate",
     "back": "back",
-    "howWorksTitle": "How works?",
-    "howCalculateTitle": "How to calculate it?",
+    "howWorksTitle": "How it works?",
+    "howCalculateTitle": "How is it calculated?",
     "howCalculateBody": "The body mass index is calculated based on height and weight. \nIf it is greater than 30, it is obese \nIf it is between 30 and 25, it is overweight \nIf it is between 25 and 18.5, it has a normal weight \nIf it is less than 18.5 has a low weight",
     "howWorksBody": "By clicking on a number it can be modified, when you are done, press the lower button."
 }

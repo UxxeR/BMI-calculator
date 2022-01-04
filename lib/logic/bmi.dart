@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BMI {
   TextEditingController _heightController = TextEditingController();
@@ -21,15 +22,15 @@ class BMI {
     return _bmi;
   }
 
-  String getInterpretation() {
+  String getInterpretation(BuildContext context) {
     if (_bmi >= 30) {
-      _textResult = "Obese";
+      _textResult = AppLocalizations.of(context).obeseWeight;
     } else if (_bmi >= 25) {
-      _textResult = "Overweight";
+      _textResult = AppLocalizations.of(context).overWeight;
     } else if (_bmi >= 18.5) {
-      _textResult = "Normal weight";
+      _textResult = AppLocalizations.of(context).normalWeight;
     } else {
-      _textResult = "Underweight";
+      _textResult = AppLocalizations.of(context).underWeight;
     }
 
     return _textResult;

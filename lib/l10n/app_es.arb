@@ -1,0 +1,17 @@
+{
+    "genderMale": "Hombre",
+    "genderFemale": "Mujer",
+    "age": "Edad",
+    "height": "Altura",
+    "weight": "Peso",
+    "obeseWeight": "Obesidad",
+    "overWeight": "Sobrepeso",
+    "normalWeight": "Peso normal",
+    "underWeight": "Bajo de peso",
+    "calculate": "calcular",
+    "back": "Volver",
+    "howWorksTitle": "¿Como funciona?",
+    "howCalculateTitle": "¿como se calcula?",
+    "howCalculateBody": "El indice de masa corporal se calcula en base a la altura y el peso.\nSi es mayor a 30, es obeso\nSi esta entre 30 y 25, tiene sobrepeso\nSi esta entre 25 y 18.5, tiene un peso normal\nSi es inferior a 18.5 tiene un peso bajo",
+    "howWorksBody": "Al pulsar en un número este podrá ser modificado, cuando hayas terminado, pulsa el botón inferior."
+}

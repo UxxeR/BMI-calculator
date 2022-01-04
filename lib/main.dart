@@ -1,5 +1,5 @@
+import 'package:bmi_calculator/pages/introduction.dart';
 import 'package:flutter/material.dart';
-import 'package:bmi_calculator/pages/home.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         fontFamily: 'ShareTechMono',
       ),
-      home: const HomePage(),
+      home: const IntroductionPage(),
       debugShowCheckedModeBanner: false,
     );
   }
